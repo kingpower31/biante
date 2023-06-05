@@ -51,7 +51,7 @@
       document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault();
         btn.textContent = 'Loading...';
-        emailjs.sendForm('service_vveuffe', 'ibb1', this)
+        emailjs.sendForm('service_vveuffe', 'template_h60ph33', this)
           .then(function () {
             console.log('SUCCESS!');
             setTimeout(() => {
